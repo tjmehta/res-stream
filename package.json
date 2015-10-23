@@ -1,0 +1,54 @@
+{
+  "name": "res-stream",
+  "version": "1.0.0",
+  "description": "Pipe responses through streams w/ headers etc., buffer responses, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab --threshold 100 --assert code",
+    "test-debug": "node-debug --no-preload ./node_modules/.bin/lab --threshold 100 --assert code --timeout 1000000 ./test",
+    "test-watch": "nodemon -x npm test",
+    "lint": "standard",
+    "format": "standard-format -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjmehta/res-stream.git"
+  },
+  "keywords": [
+    "response",
+    "http",
+    "stream",
+    "headers",
+    "trailers",
+    "pipe",
+    "pump",
+    "buffer",
+    "statusCode",
+    "head"
+  ],
+  "author": "Tejesh Mehta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjmehta/res-stream/issues"
+  },
+  "homepage": "https://github.com/tjmehta/res-stream",
+  "dependencies": {
+    "101": "^1.1.0",
+    "callback-count": "^0.2.0",
+    "object-loops": "^0.2.0",
+    "protochain": "^1.0.3",
+    "set-prototype-of": "^1.0.0",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "code": "^1.5.0",
+    "concat-stream": "^1.5.0",
+    "lab": "^6.2.0",
+    "multiline": "^1.0.2",
+    "nodemon": "^1.7.1",
+    "sinon": "^1.17.2",
+    "standard": "^5.3.1",
+    "standard-format": "^1.6.8",
+    "supertest": "^1.1.0"
+  }
+}
